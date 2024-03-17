@@ -1,22 +1,7 @@
 {
-  "name": "vscode-typescript-next",
-  "displayName": "JavaScript and TypeScript Nightly",
-  "version": "5.5.20240316",
-  "private": true,
-  "description": "Enables typescript@next to power VS Code's built-in JavaScript and TypeScript support",
+  "author": "Microsoft",
   "bugs": {
     "url": "https://github.com/microsoft/vscode-typescript-next/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/microsoft/vscode-typescript-next.git"
-  },
-  "license": "MIT",
-  "author": "Microsoft",
-  "publisher": "ms-vscode",
-  "scripts": {
-    "bump-version": "npm install typescript@next && node ./build/updatePackageVersion.js",
-    "update-grammar": "node ./build/updateGrammar.js"
   },
   "contributes": {
     "grammars": [
@@ -103,16 +88,31 @@
     ]
   },
   "dependencies": {
-    "typescript": "^5.5.0-dev.20240316"
+    "typescript": "5.5.0-dev.20240316"
   },
+  "description": "Enables typescript@next to power VS Code's built-in JavaScript and TypeScript support",
   "devDependencies": {
-    "@types/node": "^12.0.7",
+    "@types/node": "12.0.7",
     "fast-plist": "0.1.1"
   },
-  "icon": "documentation/logo.png",
+  "displayName": "JavaScript and TypeScript Nightly",
   "extensionKind": [
     "workspace"
   ],
+  "icon": "documentation/logo.png",
+  "license": "MIT",
+  "name": "vscode-typescript-next",
+  "private": true,
+  "publisher": "ms-vscode",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/microsoft/vscode-typescript-next.git"
+  },
+  "scripts": {
+    "bump-version": "npm install typescript@next && node ./build/updatePackageVersion.js",
+    "update-grammar": "node ./build/updateGrammar.js"
+  },
+  "version": "5.5.20240316",
   "workspaceTrust": {
     "request": "never"
   }
