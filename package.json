@@ -1,9 +1,31 @@
 {
   "name": "vscode-typescript-next",
   "displayName": "JavaScript and TypeScript Nightly",
-  "version": "5.5.20240316",
-  "private": true,
   "description": "Enables typescript@next to power VS Code's built-in JavaScript and TypeScript support",
+  "icon": "documentation/logo.png",
+  "private": true,
+  "publisher": "ms-vscode",
+  "version": "5.5.20240316",
+  "engines": {
+    "vscode": "^1.36.0"
+  },
+  "extensionKind": [
+    "workspace"
+  ],
+  "workspaceTrust": {
+    "request": "never"
+  },
+  "scripts": {
+    "bump-version": "npm install typescript@next && node ./build/updatePackageVersion.js",
+    "update-grammar": "node ./build/updateGrammar.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/microsoft/vscode-typescript-next.git"
+  },
+  "bugs": {
+    "url": "https://github.com/microsoft/vscode-typescript-next/issues"
+  },
   "keywords": [
     "JavaScript",
     "TypeScript",
@@ -11,19 +33,14 @@
     "ts",
     "nightly"
   ],
-  "bugs": {
-    "url": "https://github.com/microsoft/vscode-typescript-next/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/microsoft/vscode-typescript-next.git"
-  },
-  "license": "MIT",
   "author": "Microsoft",
-  "publisher": "ms-vscode",
-  "scripts": {
-    "bump-version": "npm install typescript@next && node ./build/updatePackageVersion.js",
-    "update-grammar": "node ./build/updateGrammar.js"
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^5.5.0-dev.20240316"
+  },
+  "devDependencies": {
+    "@types/node": "^12.0.7",
+    "fast-plist": "0.1.1"
   },
   "contributes": {
     "grammars": [
@@ -108,22 +125,5 @@
         }
       }
     ]
-  },
-  "dependencies": {
-    "typescript": "^5.5.0-dev.20240316"
-  },
-  "devDependencies": {
-    "@types/node": "^12.0.7",
-    "fast-plist": "0.1.1"
-  },
-  "engines": {
-    "vscode": "^1.36.0"
-  },
-  "icon": "documentation/logo.png",
-  "extensionKind": [
-    "workspace"
-  ],
-  "workspaceTrust": {
-    "request": "never"
   }
 }
