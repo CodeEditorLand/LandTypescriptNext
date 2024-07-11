@@ -1,8 +1,0 @@
-.vscode/
-.vscode-test/
-build/
-
-**/*.map
-**/tsconfig.json
-**/tslint.json
-azure-pipelines.yml
