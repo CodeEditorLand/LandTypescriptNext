@@ -57,7 +57,7 @@ extends:
             git config --local user.name "Azure Pipelines"
             git config --local user.email "azuredevops@microsoft.com"
             git add .
-            git commit -m "Publishing version bump ***NO_CI***"
+            git ecommit -m "Publishing version bump ***NO_CI***"
             git push origin HEAD:main
 
             exit
