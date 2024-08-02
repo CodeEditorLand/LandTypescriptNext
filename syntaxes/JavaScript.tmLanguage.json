@@ -1,13 +1,7 @@
 {
 	"name": "JavaScript (with React support)",
 	"scopeName": "source.js",
-	"fileTypes": [
-		".js",
-		".jsx",
-		".es6",
-		".mjs",
-		".cjs"
-	],
+	"fileTypes": [".js", ".jsx", ".es6", ".mjs", ".cjs"],
 	"uuid": "805375ec-d614-41f5-8993-5843fe63ea82",
 	"patterns": [
 		{
