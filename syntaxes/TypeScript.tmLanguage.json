@@ -1,7 +1,9 @@
 {
 	"name": "TypeScript",
 	"scopeName": "source.ts",
-	"fileTypes": ["ts"],
+	"fileTypes": [
+		"ts"
+	],
 	"uuid": "ef98eb90-bf9b-11e4-bb52-0800200c9a66",
 	"patterns": [
 		{
@@ -5785,5 +5787,5 @@
 			]
 		}
 	},
-	"version": "https://github.com/Microsoft/TypeScript-TmLanguage/commit/5f405f4bb7195bb89ec8d4952d4ba190d9e15336"
+	"version": "https://github.com/Microsoft/TypeScript-TmLanguage/commit/a8ecca877be58d17a579436fd54415f2bb95db19"
 }
