@@ -86,7 +86,7 @@
 	"dependencies": {},
 	"description": "Enables typescript@next to power VS Code's built-in JavaScript and TypeScript support",
 	"devDependencies": {
-		"@types/node": "^22.10.0",
+		"@types/node": "22.10.0",
 		"fast-plist": "0.1.3"
 	},
 	"displayName": "JavaScript and TypeScript Nightly",
