@@ -94,7 +94,7 @@
 		"workspace"
 	],
 	"icon": "documentation/logo.png",
-	"name": "vscode-typescript-next",
+	"name": "@codeeditorland/typescript-next",
 	"scripts": {
 		"bump-version": "npm install typescript@next && node ./build/updatePackageVersion.js",
 		"update-grammar": "node ./build/updateGrammar.js"
