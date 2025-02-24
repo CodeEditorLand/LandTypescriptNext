@@ -1,5 +1,5 @@
 {
-	"name": "vscode-typescript-next",
+	"name": "@codeeditorland/typescript-next",
 	"displayName": "JavaScript and TypeScript Nightly",
 	"description": "Enables typescript@next to power VS Code's built-in JavaScript and TypeScript support",
 	"scripts": {
